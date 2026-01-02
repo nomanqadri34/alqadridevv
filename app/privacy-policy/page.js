@@ -96,7 +96,7 @@ const PrivacyPolicy = () => {
                         <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">9. Contact Us</h2>
                         <p className="mb-4">If you have any questions about this privacy policy, please contact us at:</p>
                         <div className="space-y-2 font-medium">
-                            <p>Email: <a href="mailto:al.qadri.web.dev@gmail.com" className="text-primary hover:underline">al.qadri.web.dev@gmail.com</a></p>
+                            <p>Email: <a href="mailto:nomanqadri@alqadridev.in" className="text-primary hover:underline">nomanqadri@alqadridev.in</a></p>
                             <p>Phone: <a href="tel:+916392525639" className="text-primary hover:underline">+91 6392525639</a></p>
                         </div>
                     </section>

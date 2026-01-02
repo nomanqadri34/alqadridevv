@@ -177,7 +177,7 @@ const AboutMe = () => {
 
     const contactInfo = [
         { icon: <FaMapMarkerAlt />, label: "Location", value: "Gorakhpur, Uttar Pradesh, India" },
-        { icon: <FaEnvelope />, label: "Email", value: "nomanqadri34@gmail.com", link: "mailto:nomanqadri34@gmail.com" },
+        { icon: <FaEnvelope />, label: "Email", value: "nomanqadri@alqadridev.in", link: "mailto:nomanqadri@alqadridev.in" },
         { icon: <FaPhone />, label: "Phone", value: "+91 6392525639", link: "tel:+916392525639" },
     ];
 

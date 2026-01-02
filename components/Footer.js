@@ -103,10 +103,10 @@ const Footer = () => {
                                 <FaEnvelope className="text-amber-500" size={16} />
                             </div>
                             <a
-                                href="mailto:nomanqadri34@gmail.com"
+                                href="mailto:nomanqadri@alqadridev.in"
                                 className="text-gray-400 hover:text-amber-500 transition-colors duration-300 text-sm"
                             >
-                                nomanqadri34@gmail.com
+                                nomanqadri@alqadridev.in
                             </a>
                         </li>
                         <li className="flex items-center gap-3">
