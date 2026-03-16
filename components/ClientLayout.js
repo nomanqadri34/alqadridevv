@@ -7,6 +7,7 @@ import CursorGlow from "./CursorGlow";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaWhatsapp, FaPhone } from "react-icons/fa";
+import { AnimatePresence } from "framer-motion";
 
 const phoneNumber = "+916392525639";
 
@@ -17,16 +18,15 @@ export default function ClientLayout({ children }) {
         // Simulate initial loading for a smoother experience
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 2000);
+        }, 2500);
         return () => clearTimeout(timer);
     }, []);
 
-    if (isLoading) {
-        return <Loading />;
-    }
-
     return (
         <div className="flex flex-col min-h-screen relative">
+            <AnimatePresence>
+                {isLoading && <Loading key="loading" />}
+            </AnimatePresence>
             <CursorGlow />
             <Navbar />
             <div className="flex-grow">
