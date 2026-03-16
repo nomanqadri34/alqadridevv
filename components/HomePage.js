@@ -461,14 +461,14 @@ const HomePage = () => {
                                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                                     <div>
                                         <h3 className="text-2xl font-bold text-slate-800">Full Stack Developer</h3>
-                                        <h4 className="text-lg text-primary font-medium mt-1">Gozler Tech</h4>
+                                        <h4 className="text-lg text-primary font-medium mt-1">Alanxa AI</h4>
                                     </div>
                                     <div className="mt-2 md:mt-0 px-4 py-1 bg-blue-50 text-primary rounded-full text-sm font-semibold">
-                                        21 Sept 2025 - 31 Dec 2025
+                                        1 Jan 2026 - Present
                                     </div>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed">
-                                    Developing scalable full-stack applications using the MERN stack. Collaborating with cross-functional teams to deliver high-quality software solutions. Implementing responsive designs and ensuring cross-browser compatibility.
+                                    Developing scalable full-stack applications using the MERN stack. Building internal dashboards, optimizing frontend architectures, and integrating backend RESTful APIs while collaborating directly with leadership to shape product requirements.
                                 </p>
                             </div>
                         </Reveal>
