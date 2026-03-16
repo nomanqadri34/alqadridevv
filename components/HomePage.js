@@ -5,7 +5,8 @@ import {
     FaJsSquare, FaUsers, FaProjectDiagram, FaRegClock, FaPython, FaBrain
 } from "react-icons/fa";
 import {
-    SiMongodb, SiFirebase, SiVercel, SiTailwindcss, SiGoogle
+    SiMongodb, SiFirebase, SiVercel, SiTailwindcss, SiGoogle, SiDocker, SiGithubactions,
+    SiAmazonwebservices, SiHostinger, SiGooglecloud, SiNextdotjs
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
@@ -14,12 +15,24 @@ import Link from "next/link";
 // Static Data
 const projects = [
     {
+        id: 105,
+        title: "Aadhaar Analytics Platform",
+        category: "ai",
+        tech: ["React.js", "Python", "Data Analytics", "ML"],
+        github: "https://github.com/nomanqadri34/Aadhaar-Analytics-Platform",
+        image: "/assets/thumbnails/adhhar analtics platform.jpg",
+        video: "/adhhar analtics platform.mp4",
+        description: "Unlocking societal trends in Aadhaar enrolment using pattern recognition, anomaly detection, predictive intelligence, and policy insights.",
+        liveUrl: "https://aadhaar-analytics-platform.vercel.app/"
+    },
+    {
         id: 101,
         title: "Github Bug Detection",
         category: "ai",
         tech: ["Python", "ML", "Scikit-learn", "Flask"],
         github: "https://github.com/nomanqadri34/",
-        video: "",
+        image: "/assets/thumbnails/github-bug-detection.jpg",
+        video: "/github-bug-detection.mp4",
         description: "AI/ML based system to detect bugs in GitHub repositories automatically.",
         liveUrl: "https://github-bug-detection.vercel.app/"
     },
@@ -29,7 +42,8 @@ const projects = [
         category: "ai",
         tech: ["Python", "ML", "NLP", "React"],
         github: "https://github.com/nomanqadri34/",
-        video: "",
+        image: "/assets/thumbnails/jobhunter.jpg",
+        video: "/jobhunter.mp4",
         description: "Machine Learning powered job search and recommendation engine.",
         liveUrl: "https://jobhunter-seven.vercel.app/"
     },
@@ -39,7 +53,8 @@ const projects = [
         category: "clients",
         tech: ["React.js", "Node.js", "MongoDB", "TailwindCSS", "AI/ML"],
         github: "https://github.com/nomanqadri34",
-        video: "",
+        image: "/assets/thumbnails/alanxa-ai.jpg",
+        video: "/alanxa-ai.mp4",
         description: "AI training and data solutions platform for multilingual intelligence, cultural understanding, and high-quality data workflows—connecting businesses, experts, and freelancers.",
         liveUrl: "https://www.alanxa.ai"
     },
@@ -49,9 +64,10 @@ const projects = [
         category: "clients",
         tech: ["React.js", "Node.js", "MongoDB", "Razorpay"],
         github: "https://github.com/nomanqadri34",
+        image: "/assets/thumbnails/tejcivislras.jpeg",
         video: "",
         description: "EdTech platform for RAS, PSI, and civil service exam preparation with courses, tests, and student management.",
-        liveUrl: "https://www.tejcivilsedtech.in"
+        liveUrl: "https://tejcivilsedtech.com/"
     },
     {
         id: 9,
@@ -59,6 +75,7 @@ const projects = [
         category: "clients",
         tech: ["React.js", "Tailwind CSS", "Cloudinary", "Nodemailer"],
         github: "https://github.com/nomanqadri34",
+        image: "/assets/thumbnails/ssd1.jpg",
         video: "/ssd1.mp4",
         description: "SSD International a B2B brand in clothing, accessories & corporate gifting.",
         liveUrl: "https://www.thessdinternational.com/"
@@ -69,6 +86,7 @@ const projects = [
         category: "clients",
         tech: ["React.js", "Firebase", "Cloudinary", "Nodemailer"],
         github: "https://github.com/nomanqadri34",
+        image: "/assets/thumbnails/mumtaz1.jpg",
         video: "/mumtaz1.mp4",
         description: "Photography studio portfolio and booking management system.",
         liveUrl: "https://www.mumtazstudio.in"
@@ -79,7 +97,8 @@ const projects = [
         category: "clients",
         tech: ["React.js", "Node.js", "MongoDB", "Stripe"],
         github: "https://github.com/nomanqadri34",
-        video: "",
+        image: "/assets/thumbnails/vcxmart.jpg",
+        video: "/vcxmart.mp4",
         description: "B2B subscription-based e-commerce platform enabling vendors to sell products with multi-vendor management.",
         liveUrl: "https://vcxmart.com"
     },
@@ -89,6 +108,7 @@ const projects = [
         category: "clients",
         tech: ["React.js", "Node.js", "MongoDB", "Stripe"],
         github: "https://github.com/nomanqadri34/",
+        image: "/assets/thumbnails/three1.jpg",
         video: "/three1.mp4",
         description: "E-commerce platform with product management, cart functionality, and secure payments.",
         liveUrl: "https://www.three60onwards.in"
@@ -99,6 +119,7 @@ const projects = [
         category: "web",
         tech: ["React.js", "Node.js", "MongoDB", "Firebase"],
         github: "https://github.com/nomanqadri34/alqadriblog",
+        image: "/assets/thumbnails/blog1.jpg",
         video: "/blog1.mp4",
         description: "A full-featured blog platform with authentication, admin panel, and cloud image uploads."
     },
@@ -108,7 +129,8 @@ const projects = [
         category: "web",
         tech: ["React.js", "Node.js", "MongoDB"],
         github: "https://github.com/nomanqadri34/Lms",
-        video: "/l1.mp4",
+        image: "/assets/thumbnails/lms.jpg",
+        video: "/lms.mp4",
         description: "A learning management system for online courses and student tracking."
     },
     {
@@ -117,7 +139,8 @@ const projects = [
         category: "web",
         tech: ["MongoDB", "Express", "React", "Node"],
         github: "https://github.com/nomanqadri34/al-qadri-car-frontend",
-        video: "/car11.mp4",
+        image: "/assets/thumbnails/Easycar.jpg",
+        video: "/Easycar.mp4",
         description: "A car rental platform with booking, admin, and payment features."
     },
     {
@@ -126,6 +149,7 @@ const projects = [
         category: "word",
         tech: ["HTML", "CSS", "Javascript"],
         github: "https://github.com/nomanqadri34/Gym-landing-page",
+        image: "/assets/thumbnails/gym1.jpg",
         video: "/gym1.mp4",
         description: "A modern landing page for a gym business."
     },
@@ -135,6 +159,7 @@ const projects = [
         category: "word",
         tech: ["HTML", "CSS", "Javascript"],
         github: "https://github.com/nomanqadri34/al-qadri-portfolio",
+        image: "/assets/thumbnails/p1.jpg",
         video: "/p1.mp4",
         description: "A personal portfolio website to showcase projects and skills."
     }
@@ -175,8 +200,13 @@ const services = [
 
 const techStack = [
     { icon: <FaReact className="text-cyan-500 text-3xl" />, name: "React" },
+    { icon: <SiNextdotjs className="text-slate-900 text-3xl" />, name: "Next.js" },
     { icon: <FaNodeJs className="text-green-600 text-3xl" />, name: "Node.js" },
     { icon: <SiMongodb className="text-green-700 text-3xl" />, name: "MongoDB" },
+    { icon: <SiAmazonwebservices className="text-[#FF9900] text-3xl" />, name: "AWS" },
+    { icon: <SiGooglecloud className="text-[#4285F4] text-3xl" />, name: "GCP" },
+    { icon: <SiHostinger className="text-[#673DE6] text-3xl" />, name: "Hostinger" },
+    { icon: <SiDocker className="text-blue-500 text-3xl" />, name: "Docker" },
     { icon: <FaPython className="text-blue-500 text-3xl" />, name: "Python" },
     { icon: <FaBrain className="text-purple-500 text-3xl" />, name: "AI/ML" },
     { icon: <SiTailwindcss className="text-teal-400 text-3xl" />, name: "Tailwind" },
@@ -192,6 +222,7 @@ const stats = [
 
 const phrases = [
     "Full Stack Developer",
+    "DevOps Engineer",
     "AI/ML Enthusiast",
     "MERN Stack Expert",
     "Problem Solver"
@@ -303,7 +334,7 @@ const HomePage = () => {
                     <div className="text-left z-10 order-2 lg:order-1">
                         <Reveal>
                             <div className="inline-block px-4 py-2 rounded-full bg-white shadow-sm border border-gray-100 mb-6">
-                                <span className="text-primary font-semibold text-sm tracking-wide uppercase">Available for Hire</span>
+                                <span className="text-primary font-semibold text-sm tracking-wide uppercase">Available for Hire in Delhi & Worldwide</span>
                             </div>
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-slate-900">
                                 Hi, I'm <span className="text-primary">Mohd Noman Qadri</span>
@@ -312,8 +343,8 @@ const HomePage = () => {
                                 I am a <span className="text-primary">{text}</span><span className="cursor">|</span>
                             </h2>
                             <p className="text-lg text-slate-600 mb-8 max-w-lg leading-relaxed">
-                                Building scalable web applications and intelligent AI solutions.
-                                Passionate about turning complex problems into elegant, user-friendly digital experiences.
+                                I build scalable web applications, automated DevOps pipelines, and intelligent AI models.
+                                Proudly based in New Delhi, I transform complex problems into top-tier digital experiences.
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <button
@@ -339,7 +370,7 @@ const HomePage = () => {
                                 <div className="absolute inset-0 bg-gradient-to-tr from-amber-500 to-yellow-400 rounded-full rotate-6 opacity-20 blur-lg"></div>
                                 <div className="absolute inset-0 bg-white rounded-full shadow-2xl overflow-hidden border-4 border-white transform transition-transform hover:scale-[1.02] duration-500">
                                     <img
-                                        src="/assets/noman1.jpg"
+                                        src="/assets/noman-profile.jpeg"
                                         alt="Mohd Noman Qadri"
                                         className="w-full h-full object-cover"
                                     />
@@ -433,7 +464,7 @@ const HomePage = () => {
                                         <h4 className="text-lg text-primary font-medium mt-1">Gozler Tech</h4>
                                     </div>
                                     <div className="mt-2 md:mt-0 px-4 py-1 bg-blue-50 text-primary rounded-full text-sm font-semibold">
-                                        21 Sept 2024 - Present
+                                        21 Sept 2025 - 31 Dec 2025
                                     </div>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed">
@@ -525,6 +556,15 @@ const HomePage = () => {
                                         className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-300 h-full flex flex-col cursor-pointer"
                                         onClick={() => setSelectedProject(project)}
                                     >
+                                        {project.image && (
+                                            <div className="h-48 overflow-hidden relative border-b border-gray-100">
+                                                <img
+                                                    src={project.image}
+                                                    alt={project.title}
+                                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                />
+                                            </div>
+                                        )}
                                         <div className="p-6 flex-grow">
                                             <div className="flex justify-between items-start mb-4">
                                                 <span className="px-3 py-1 bg-blue-50 text-primary text-xs font-bold uppercase tracking-wider rounded-full">

@@ -41,7 +41,7 @@ import Link from "next/link";
 // Images
 // Assumed assets are in /assets/ public folder
 const cvFile = "/assets/CV2.pdf";
-const profileImage = "/assets/noman1.jpg";
+const profileImage = "/assets/noman-profile.jpeg";
 
 const AboutMe = () => {
     const [activeTab, setActiveTab] = useState('overview');
@@ -176,7 +176,7 @@ const AboutMe = () => {
     ];
 
     const contactInfo = [
-        { icon: <FaMapMarkerAlt />, label: "Location", value: "Gorakhpur, Uttar Pradesh, India" },
+        { icon: <FaMapMarkerAlt />, label: "Location", value: "New Delhi, Delhi NCR, India" },
         { icon: <FaEnvelope />, label: "Email", value: "nomanqadri@alqadridev.in", link: "mailto:nomanqadri@alqadridev.in" },
         { icon: <FaPhone />, label: "Phone", value: "+91 6392525639", link: "tel:+916392525639" },
     ];
@@ -271,7 +271,7 @@ const AboutMe = () => {
                                 </div>
 
                                 <p className="text-slate-600 mb-8 text-base leading-relaxed max-w-3xl mx-auto lg:mx-0">
-                                    I'm a passionate <span className="font-bold text-primary">Full Stack Developer</span> from Gorakhpur, India,
+                                    I'm a passionate <span className="font-bold text-primary">Full Stack, AI/ML & DevOps Developer</span> based in <span className="font-semibold">New Delhi, India</span>,
                                     currently pursuing an MCA at <span className="font-semibold">Jamia Hamdard University</span>.
                                     My journey is fueled by an insatiable curiosity for technology and a commitment to crafting digital solutions
                                     that create meaningful impact. I specialize in the <span className="font-bold text-primary">MERN stack</span> and

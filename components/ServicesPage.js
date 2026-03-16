@@ -2,9 +2,9 @@
 import React from "react";
 import {
     FaMobileAlt, FaLaptopCode, FaHtml5, FaPenNib,
-    FaSearch, FaBug, FaFileAlt, FaDatabase, FaNodeJs, FaReact, FaShieldAlt, FaUsers, FaHeadset, FaArrowRight
+    FaSearch, FaBug, FaFileAlt, FaDatabase, FaNodeJs, FaReact, FaShieldAlt, FaUsers, FaHeadset, FaArrowRight, FaServer
 } from "react-icons/fa";
-import { SiMongodb, SiExpress } from "react-icons/si";
+import { SiMongodb, SiExpress, SiDocker } from "react-icons/si";
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 import Link from "next/link";
@@ -23,6 +23,7 @@ const services = [
     { icon: <FaSearch />, title: "SEO Optimization", desc: "SEO optimization for higher rankings and better visibility.", color: "from-green-500 to-emerald-500" },
     { icon: <FaBug />, title: "Bug Fixing", desc: "Quick and efficient bug fixes for smooth user experience.", color: "from-red-500 to-orange-500" },
     { icon: <FaFileAlt />, title: "Content Writing", desc: "Engaging, SEO-friendly content for your website or blog.", color: "from-blue-500 to-indigo-500" },
+    { icon: <FaServer />, title: "DevOps & Deployment", desc: "Scalable automated CI/CD pipelines and cloud deployments.", color: "from-gray-600 to-slate-800" },
     { icon: <FaDatabase />, title: "Data Annotation", desc: "Accurate data labeling for machine learning and AI projects.", color: "from-violet-500 to-purple-500" },
 ];
 

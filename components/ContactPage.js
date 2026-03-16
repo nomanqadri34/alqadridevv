@@ -42,7 +42,7 @@ const Contact = () => {
         {
             icon: <FaMapMarkerAlt />,
             title: "Location",
-            value: "Gorakhpur, Uttar Pradesh, India",
+            value: "New Delhi, Delhi NCR, India",
             link: null
         },
         {

@@ -87,7 +87,7 @@ const SkillsExperience = () => {
             icon: <FaBriefcase className="text-primary text-2xl" />,
             title: "Full Stack Developer",
             company: "Gozler Tech",
-            duration: "21 Sept 2024 - Present",
+            duration: "21 Sept 2025 - 31 Dec 2025",
             type: "Full-time",
             location: "Remote",
             responsibilities: [
@@ -99,6 +99,24 @@ const SkillsExperience = () => {
             achievements: [
                 "Improved application performance by 40%",
                 "Successfully delivered 5+ client projects"
+            ]
+        },
+        {
+            icon: <FaBriefcase className="text-primary text-2xl" />,
+            title: "Full Stack Developer",
+            company: "Alanxa AI",
+            duration: "Jan 2026 - Present",
+            type: "Contract",
+            location: "Remote",
+            responsibilities: [
+                "Developing scalable full-stack applications using MERN stack",
+                "Building internal dashboards and training tools for data annotation",
+                "Working on optimized frontend architectures and backend RESTful APIs",
+                "Collaborating directly with the CEO to shape product requirements"
+            ],
+            achievements: [
+                "Launched main product website with modern responsive UI",
+                "Ensured high performance and reliable software architecture"
             ]
         },
         {

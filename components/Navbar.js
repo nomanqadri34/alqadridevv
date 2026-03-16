@@ -4,6 +4,74 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaWhatsapp, FaPhone } from "react-icons/fa";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"] });
+
+const HighQualityLogo = () => (
+    <div className="flex items-center gap-1 group">
+        {/* SVG Icon */}
+        <div className="w-8 h-8 md:w-11 md:h-11 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                <defs>
+                    <linearGradient id="logo-grad" x1="0" y1="0" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stopColor="#fbbf24" />
+                        <stop offset="30%" stopColor="#f59e0b" />
+                        <stop offset="100%" stopColor="#ea580c" />
+                    </linearGradient>
+                </defs>
+
+                {/* Speech Bubble */}
+                <g fill="url(#logo-grad)">
+                    <path d="M 33 15 h 25 a 4 4 0 0 1 4 4 v 12 a 4 4 0 0 1 -4 4 h -14 l -7 7 v -7 h -4 a 4 4 0 0 1 -4 -4 v -12 a 4 4 0 0 1 4 -4 z" />
+                </g>
+                <circle cx="41" cy="25" r="1.5" fill="#fff" />
+                <circle cx="46" cy="25" r="1.5" fill="#fff" />
+                <circle cx="51" cy="25" r="1.5" fill="#fff" />
+
+                <g fill="url(#logo-grad)">
+                    {/* Head */}
+                    <circle cx="26" cy="30" r="4.5" />
+
+                    {/* Body & Legs */}
+                    <path d="M 22 37 h 6.5 v 20 h 16.5 v 4.5 h -23 z" />
+
+                    {/* Arm */}
+                    <path d="M 27 39 l 10 6 h 12 v -3 h -10.5 l -9 -5.5 z" />
+
+                    {/* Laptop */}
+                    <path d="M 52 44 l 4 -10 h 2.5 l -4 10 z" />
+                    <path d="M 49 44 h 14 v 2.5 h -14 z" />
+
+                    {/* Desk Top */}
+                    <path d="M 39 47.5 h 26 v 3 h -26 z" />
+                    {/* Desk Base */}
+                    <path d="M 50 50.5 h 15 v 23 h -15 z" />
+
+                    {/* Chair Backrest & Seat */}
+                    <path d="M 16 43 h 2 v 20 h 13 v 2 h -15 z" />
+                    {/* Chair Stand */}
+                    <path d="M 21.5 65 h 2 v 10 h -2 z" />
+                    {/* Chair Base */}
+                    <path d="M 16 75 h 13 v 2 h -13 z" />
+                </g>
+            </svg>
+        </div>
+
+        {/* Text */}
+        <div className="flex flex-col justify-center translate-y-0.5">
+            <span className={`text-slate-800 text-[14px] md:text-[18px] font-bold leading-none tracking-widest ${orbitron.className}`}>
+                AL QADRI
+            </span>
+            <span className={`text-slate-800 text-[14px] md:text-[18px] font-bold leading-none tracking-widest mt-0.5 ${orbitron.className}`}>
+                DEV
+            </span>
+            <span className="text-slate-500 text-[5px] md:text-[6.5px] font-bold tracking-[0.2em] mt-[3px]">
+                BUILD DEBUG DELIVER
+            </span>
+        </div>
+    </div>
+);
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -41,14 +109,8 @@ const Navbar = () => {
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
                     {/* Logo */}
-                    <Link href="/" className="flex-shrink-0">
-                        {/* Ensure image path is correct - moving assest/ to public/ or using external URL */}
-                        <img
-                            src="/assets/lo1.webp"
-                            alt="Logo"
-                            className="h-12 w-auto"
-                            onError={(e) => (e.target.src = "/assets/logo3.png")}
-                        />
+                    <Link href="/" className="flex-shrink-0 outline-none">
+                        <HighQualityLogo />
                     </Link>
 
                     {/* Desktop Menu */}
